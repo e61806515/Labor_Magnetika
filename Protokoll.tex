@@ -1,0 +1,91 @@
+\documentclass[a4paper,twoside,12pt,DIV=13,BCOR=5mm,numbers=noenddot,cleardoublepage=empty]{scrbook}
+\input{format-LU} 
+\usepackage{ucs} 	
+\usepackage{float}		% File mit den ben�tigten Packeten, den Formatanweisungen und den Befehlsdefinitionen
+\begin{document}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+%=============================================================================================
+% Titelblatt und Inhaltsverzeichnis
+%=============================================================================================
+\renewcommand{\baselinestretch}{1.25}
+\newcommand{\StudentA}{Marton Harsch}
+\newcommand{\MatrNrA}{12123680}
+\newcommand{\StudentB}{Michael Malburg}
+\newcommand{\MatrNrB}{61806515}
+\newcommand{\StudentC}{Jonathan Gamperl}
+\newcommand{\MatrNrC}{12302766}
+
+\newcommand{\LUDatum}{22.4.2024}
+\newcommand{\LUGruppe}{}
+\newcommand{\LUBetreuer}{}
+
+\large
+\includepdf[fitpaper=true,
+						picturecommand*={\unitlength1cm 
+						\put(7.3,7.7){\StudentA} \put(14.1,7.7){\MatrNrA}
+            \put(7.3,7.0){\StudentB} \put(14.1,7.0){\MatrNrB}
+            \put(7.3,6.3){\StudentC} \put(14.1,6.3){\MatrNrC}
+						\put(7.3,5.1){\LUDatum} 
+            \put(7.3,4.4){\LUGruppe} 
+            \put(7.3,3.7){\LUBetreuer} 
+}]
+{pictures/DeckblattLUDie}     %file name of title page
+
+
+%===============================================================================
+% Text
+%===============================================================================
+
+\cleardoublepage
+\setcounter{tocdepth}{3}
+
+\setcounter{page}{0}
+\renewcommand{\thepage}{\roman{page}}
+\tableofcontents \cleardoublepage
+
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{chapter}{0}
+
+
+%===============================================================================
+
+\newpage
+\chapter{Zusammenfassung}
+Die Zusammenfassung
+\newpage
+\chapter{Ringkerntrafo}
+\section{Aufnahme einer Hystereseschleife}
+
+\section{Aufnahme der Permeabilitätskurve}
+
+
+\section{Hystereseschleife und Entmagnetisierung}
+
+
+\section{Die Neukurve}
+
+\section{Fazit}
+
+\chapter{Übungen am Elektromagneten}
+\section{Metallscheiben im Magnetfeld}
+
+\section{Eisenblech im Magnetfeld}
+
+\section{Diamagnetische Stoffe}
+
+\section{Messung des Magnetfeldes}
+
+\section{Lorentzkraft}
+
+´\section{Fazit}
+
+
+
+\subsection{Messung} 
+
+
+
+\end{document}
+
+
